@@ -1,0 +1,41 @@
+.navbar
+	justify-content: flex-start
+	background: $blue
+	border-bottom: 0.5px solid grey
+	padding: 0
+	-webkit-box-shadow: 1px 1px 4px 0px #C7C7C7
+	box-shadow: 1px 1px 4px 0px #C7C7C7	
+
+	a
+		color: $light-blue
+		padding: 20px 40px
+		margin: 0
+
+		@media(max-width: 768px)
+			width: 50%
+
+		&:hover, &.selected
+			text-decoration: none
+			margin-bottom: -1px
+
+		&:hover 
+			border-bottom: 2px solid $light-blue
+		
+		&.selected
+			color: white
+			border-bottom: 2px solid white
+
+.content 
+	margin: 20px auto 30px auto
+
+.pages
+	width: 100%
+	margin: 0
+
+	a 
+		padding: 10px
+		margin: 0
+
+		&.selected 
+			text-decoration: underline
+
